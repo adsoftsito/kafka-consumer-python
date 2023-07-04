@@ -11,7 +11,7 @@ import subprocess
 
 
 # replace here with your mongodb url 
-uri = "mongodb+srv://adsoft:adsoft-sito@cluster0.kzghgph.mongodb.net/?retryWrites=true&w=majority"
+uri = "mongodb+srv://adsoft:Adsoft321@cluster0.kzghgph.mongodb.net/?retryWrites=true&w=majority"
 
 
 # Create a new client and connect to the server
