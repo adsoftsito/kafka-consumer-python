@@ -37,8 +37,8 @@ except:
     print("Could not connect to MongoDB")
 
 consumer = KafkaConsumer('test',bootstrap_servers=[
-     'my-kafka-0.my-kafka-headless.kafka-adsoftsito.svc.cluster.local:9092'
-    ])
+     'my-kafka-0.my-kafka-headless.trainning-adsoftsito.svc.cluster.local:9092'
+     ])
 # Parse received data from Kafka
 for msg in consumer:
     record = json.loads(msg.value)
@@ -59,7 +59,7 @@ for msg in consumer:
     
     
 
-    # Create dictionary and ingest data into MongoDB
+    # Create memes_summary and insert groups into MongoDB
     try:
        agg_result= db.memes_info.aggregate(
        [{
